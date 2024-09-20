@@ -1,1 +1,113 @@
 /* Ini CSS */
+@import url(https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/** Main Header */
+.logo-icon {
+    width: 50px;
+    height: 50px;
+    margin: 4px 0px 4px 16px;
+    padding: 2px;
+    background: url(/assets/ai_1.jpeg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.main-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav {
+    display: flex;
+    margin: 0px 16px 0px 0px;
+}
+
+nav>a {
+    border: 1px solid black;
+    padding: 0px 8px;
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+}
+
+/** Main Header */
+
+/** Main Content */
+.photo-banner {
+    height: 480px;
+    border: 1px solid black;
+    background-image: url(/assets/Firewatch.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.profile-icon {
+    width: 50px;
+    height: 50px;
+    margin: 4px 0px 4px 16px;
+    padding: 2px;
+    background: url(/assets/ai_1.jpeg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.profile-icon-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.profile-icon-container>div {
+    flex-direction: column;
+    align-items: center;
+}
+
+.portfolio-container {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.portfolio-item img {
+    max-width: 100px;
+    /* Set maximum width for the image */
+    height: auto;
+    /* Maintain aspect ratio */
+}
+
+#section-message-us {
+    margin: 16px 40px;
+}
+
+.form-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 16px 40px 32px 40px;
+}
+
+.form-results-container {
+    border: 1px solid black;
+}
+
+footer {
+    text-align: center;
+    padding: 16px;
+}
+
+/** Main Content */

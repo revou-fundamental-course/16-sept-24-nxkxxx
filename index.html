@@ -104,40 +104,52 @@
 
         <!-- Message Us -->
         <section id="section-message-us">
-            <header>
-                <h1>Message Us</h1>
-            </header>
 
-            <section class="form-container">
+            <div class="card">
+                <div class="card-header">Message Us</div>
                 <!-- Form -->
-                <form action="">
-                    <label for="nama">Nama:</label>
-                    <input type="text" placeholder="Name"><br>
-
-                    <label for="tanggal">Tanggal:</label>
-                    <input type="date"><br>
-
-                    <label for="jenisKelamin">Jenis Kelamin:</label>
-                    <input type="radio" name="jenisKelamin" id="jenisKelamin">
-                    <label for="jenisKelamin">Laki-laki</label>
-                    <input type="radio" name="jenisKelamin" id="jenisKelamin">
-                    <label for="jenisKelamin">Perempuan</label><br>
-
-                    <label for="pesan">Pesan:</label>
-                    <textarea placeholder="Pesan"></textarea><br>
-
-                    <button type="submit">Send</button>
-                </form>
-
-                <!-- Form Results -->
-                <div class="form-results-container">
+                <div class="card-content">
+                    <form action="" id="messageForm">
+                        <div class="form-group">
+                            <label for="nama">Nama:</label>
+                            <input type="text" placeholder="Name"><br>
+                        </div>
+                        <div class="form-group">
+                            <label for="tanggal">Tanggal:</label>
+                            <input type="date"><br>
+                        </div>
+                        <div class="form-group">
+                            <label>Jenis Kelamin:</label>
+                            <div class="radio-group">
+                                <div class="radio-option">
+                                    <input type="radio" name="jenisKelamin" id="jenisKelamin">
+                                    <label for="lakiLaki">Laki-laki</label>
+                                </div>
+                                <div class="radio-option">
+                                    <input type="radio" name="jenisKelamin" id="jenisKelamin">
+                                    <label for="perempuan">Perempuan</label><br>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="pesan">Pesan:</label>
+                            <textarea placeholder="Pesan"></textarea><br>
+                        </div>
+                        <button type="submit" class="form-button">Send</button>
+                    </form>
+                </div>
+            </div>
+            <!-- Form Results -->
+            <div class="card">
+                <div class="card-header">Form Results</div>
+                <div class="card-content" id="formResults">
                     <p><strong>Nama:</strong> Adit P</p>
                     <p><strong>Tanggal:</strong> Friday, 2024-01-01 12:00:00</p>
                     <p><strong>Jenis Kelamin:</strong> Laki-laki</p>
                     <p><strong>Pesan:</strong> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi, fugiat!
                     </p>
                 </div>
-            </section>
+            </div>
         </section>
         <hr />
     </main>

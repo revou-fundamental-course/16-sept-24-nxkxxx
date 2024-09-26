@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>RevoU Mini Project</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 
 <body>
@@ -20,8 +21,9 @@
 
         <!-- Navbar -->
         <nav>
+            <!-- Nav Links -->
             <a href="#section-home">Home</a>
-            <a href="#section-our-profile">Our Profile</a>
+            <a href="#section-about">About Me</a>
             <a href="#section-portfolio">Portfolio</a>
             <a href="#section-message-us">Message Us</a>
         </nav>
@@ -36,68 +38,75 @@
         <!-- Home -->
         <section id="section-home">
             <header>
-                <h1>Hi <span id="user-name"></span>, this is a random quotes for you!</h1>
+                <h1>Hi <span id="user-name"></span>, this is a quotes for you!</h1>
+            </header>
 
-                <article>
-                    <p>"The only way to do great work is to love what you do." - Steve Jobs</p>
-                    <div class="photo-banner">
-                        <img src="assets/Firewatch.png" alt="" class="imageSlideShow">
-                        <img src="assets/Unbound-1.png" alt="" class="imageSlideShow">
-                        <img src="assets/Spidey.jpg" alt="" class="imageSlideShow">
-                        <img src="assets/Spidey2.jpg" alt="" class="imageSlideShow">
-                        <div class="button-container">
-                            <button onclick="changeSlide(-1)">&#10094;</button>
-                            <button onclick="changeSlide(1)">&#10095;</button>
-                        </div>
+            <article>
+                <p>"The only way to do great work is to love what you do." - Steve Jobs</p>
+                <div class="photo-banner">
+                    <!-- Photo Banner Images -->
+                    <img src="assets/1.jpeg" alt="" class="imageSlideShow">
+                    <img src="assets/2.jpeg" alt="" class="imageSlideShow">
+                    <img src="assets/3.jpeg" alt="" class="imageSlideShow">
+                    <img src="assets/4.jpeg" alt="" class="imageSlideShow">
+                    <div class="button-container">
+                        <!-- Change Slide Buttons -->
+                        <button onclick="changeSlide(-1)">&#10094;</button>
+                        <button onclick="changeSlide(1)">&#10095;</button>
                     </div>
-                </article>
+                </div>
+            </article>
         </section>
         <hr />
 
         <!-- Our Profile -->
-        <section id="section-our-profile">
+        <section id="section-about">
             <header>
-                <h1>Our Profile</h1>
+                <h1>About Me</h1>
             </header>
             <div class="profile-icon-container">
-
                 <div>
                     <div class="profile-icon"></div>
-                    <h4>Profile 1</h4>
-                </div>
-
-                <div>
-                    <div class="profile-icon"></div>
-                    <h4>Profile 2</h4>
-                </div>
-
-                <div>
-                    <div class="profile-icon"></div>
-                    <h4>Profile 3</h4>
+                    <img src="assets/ai_1.jpeg" alt="Profile">
+                    <p>Hi! I'm Adit, a passionate web developer with a love for creating interactive and user-friendly
+                        websites. I enjoy learning new technologies and improving my skills. In my free time, I love
+                        playing games.</p>
+                    <!-- My Skills -->
+                    <div class="skills-container">
+                        <h2>My Skills</h2>
+                        <ul>
+                            <li><i class="fab fa-html5 skill-icon" title="HTML5"></i></li>
+                            <li><i class="fab fa-css3-alt skill-icon" title="CSS3"></i></li>
+                            <li><i class="fab fa-js-square skill-icon" title="JavaScript"></i></li>
+                            <li><i class="fab fa-php skill-icon" title="PHP"></i></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
+
         </section>
         <hr />
 
         <!-- Portfolio -->
         <section id="section-portfolio">
+            <div class="portfolio"></div>
             <header>
-                <h1>Portfolio</h1>
+                <h1>Portfolio</h1> <!-- Centered the header -->
             </header>
 
             <div class="portfolio-container">
                 <div class="portfolio-item">
-                    <img src="/assets/Firewatch.png" alt="Project 1">
+                    <img src="/assets/1.jpeg" alt="Project 1">
                     <h3>Project 1</h3>
                     <p>Description of Project 1.</p>
                 </div>
                 <div class="portfolio-item">
-                    <img src="/assets/Firewatch.png" alt="Project 2">
+                    <img src="/assets/2.jpeg" alt="Project 2">
                     <h3>Project 2</h3>
                     <p>Description of Project 2.</p>
                 </div>
                 <div class="portfolio-item">
-                    <img src="/assets/Firewatch.png" alt="Project 3">
+                    <img src="/assets/3.jpeg" alt="Project 3">
                     <h3>Project 3</h3>
                     <p>Description of Project 3.</p>
                 </div>
@@ -107,52 +116,60 @@
 
         <!-- Message Us -->
         <section id="section-message-us">
-
-            <div class="card">
-                <div class="card-header">Message Us</div>
-                <!-- Form -->
-                <div class="card-content">
-                    <form action="" id="messageForm" onsubmit="return false">
-                        <div class="form-group">
-                            <label for="nama">Nama:</label>
-                            <input type="text" placeholder="Name" id="nama"><br>
-                        </div>
-                        <div class="form-group">
-                            <label for="tanggal">Tanggal:</label>
-                            <input type="date" id="tanggal"><br>
-                        </div>
-                        <div class="form-group">
-                            <label>Jenis Kelamin:</label>
-                            <div class="radio-group">
-                                <div class="radio-option">
-                                    <input type="radio" name="jenisKelamin" id="lakiLaki">
-                                    <label for="lakiLaki">Laki-laki</label>
-                                </div>
-                                <div class="radio-option">
-                                    <input type="radio" name="jenisKelamin" id="perempuan">
-                                    <label for="perempuan">Perempuan</label><br>
+            <header>
+                <h1>Message Us</h1>
+            </header>
+            <div class="form-container"> <!-- New container for forms -->
+                <!-- Message Us Card -->
+                <div class="card">
+                    <div class="card-header">Message Us</div>
+                    <!-- Card Content -->
+                    <div class="card-content">
+                        <!-- Form -->
+                        <form action="" id="messageForm" onsubmit="return false">
+                            <div class="form-group">
+                                <label for="nama">Nama:</label>
+                                <input type="text" placeholder="Name" id="nama"><br>
+                            </div>
+                            <div class="form-group">
+                                <label for="tanggal">Tanggal:</label>
+                                <input type="date" id="tanggal"><br>
+                            </div>
+                            <div class="form-group">
+                                <label>Jenis Kelamin:</label>
+                                <div class="radio-group">
+                                    <div class="radio-option">
+                                        <input type="radio" name="jenisKelamin" id="lakiLaki">
+                                        <label for="lakiLaki">Laki-laki</label>
+                                    </div>
+                                    <div class="radio-option">
+                                        <input type="radio" name="jenisKelamin" id="perempuan">
+                                        <label for="perempuan">Perempuan</label><br>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="form-group">
-                            <label for="pesan">Pesan:</label>
-                            <textarea placeholder="Pesan" id="pesan"></textarea><br>
-                        </div>
-                        <button type="submit" class="form-button" onclick="validateForm()">Send</button>
-                    </form>
+                            <div class="form-group">
+                                <label for="pesan">Pesan:</label>
+                                <textarea placeholder="Pesan" id="pesan"></textarea><br>
+                            </div>
+                            <!-- Form Send Button -->
+                            <button type="submit" class="form-button" onclick="validateForm()">Send</button>
+                        </form>
+                    </div>
                 </div>
-            </div>
-            <!-- Form Results -->
-            <div class="card">
-                <div class="card-header">Form Results</div>
-                <div class="card-content" id="formResults">
-                    <p><strong>Nama:</strong> <span id="resultNama"></span></p>
-                    <p><strong>Tanggal:</strong> <span id="resultTanggal"></span></p>
-                    <p><strong>Jenis Kelamin:</strong> <span id="resultJenisKelamin"></span></p>
-                    <p><strong>Pesan:</strong> <span id="resultPesan"></span></p>
-                    </p>
+                <!-- Form Results Card-->
+                <div class="card">
+                    <div class="card-header">Form Results</div>
+                    <!-- Card Content -->
+                    <div class="card-content" id="formResults">
+                        <!-- Form Results -->
+                        <p><strong>Nama:</strong> <span id="resultNama"></span></p>
+                        <p><strong>Tanggal:</strong> <span id="resultTanggal"></span></p>
+                        <p><strong>Jenis Kelamin:</strong> <span id="resultJenisKelamin"></span></p>
+                        <p><strong>Pesan:</strong> <span id="resultPesan"></span></p>
+                    </div>
                 </div>
-            </div>
+            </div> <!-- End of form-container -->
         </section>
         <hr />
     </main>
@@ -164,6 +181,7 @@
     </footer>
     <!-- Footer -->
 
+    <!-- Script -->
     <script src="js/script.js"></script>
 </body>
 

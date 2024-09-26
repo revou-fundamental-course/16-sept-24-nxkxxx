@@ -21,7 +21,7 @@ setInterval(() => {
 }, 5000);
 
 // Replace Name
-replaceName();
+// replaceName();
 function replaceName() {
     let name = prompt("Please enter your name");
     document.querySelector("#user-name").innerText = name;
